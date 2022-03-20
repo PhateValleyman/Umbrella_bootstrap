@@ -57,11 +57,11 @@ export PS1
 CROSS_COMPILER="/data/data/com.termux/files/cross-compiler-armv5l/bin"
 export CROSS_COMPILER
 
-GO111MODULE="on"
-export GO111MODULE
+# GO111MODULE="on"
+# export GO111MODULE
 
 #GOBIN="~/go/bin"
-export GOBIN
+# export GOBIN
 
 PATH="/data/data/com.termux/files/usr/bin:/data/data/com.termux/files/usr/sbin:$GOBIN:$CROSS_COMPILER"
 export PATH
