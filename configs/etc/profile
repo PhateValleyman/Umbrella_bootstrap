@@ -1,0 +1,94 @@
+
+for i in $PREFIX/etc/profile.d/*.sh; do
+	if [ -r $i ]; then
+		. $i
+	fi
+done
+unset i
+
+# Source etc/bash.bashrc and ~/.bashrc also for interactive bash login shells:
+if [ "$BASH" ]; then
+        if [[ "$-" == *"i"* ]]; then
+                if [ -r $PREFIX/etc/bash.bashrc ]; then
+                        . $PREFIX/etc/bash.bashrc
+                fi
+        fi
+fi
+
+GH_TOKEN="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"
+export GH_TOKEN
+
+GH_BROWSER="elinks"
+export GH_BROWSER
+
+CLICOLOR="1"
+export CLICOLOR
+
+DEBUG="1"
+export DEBUG
+
+CLICOLOR_FORCE="1"
+export CLICOLOR_FORCE
+
+GH_CONFIG_DIR="$PREFIX/etc/gh"
+export GH_CONFIG_DIR
+
+CONFIG_SITE="$PREFIX/etc/config.site"
+export CONFIG_SITE
+
+INPUTRC="$PREFIX/etc/inputrc"
+export INPUTRC
+
+DIALOGRC="$PREFIX/etc/dialogrc"
+export DIALOGRC
+
+NANORC="$PREFIX/etc/nanorc"
+export NANORC
+
+DPKG_COLORS="always"
+export DPKG_COLORS
+
+DPKG_PAGER="less"
+export DPKG_PAGER
+
+PS1='\[\e[39m\]\[\e[39m\]\[\e[0;92m\]\h\[\e[0;1;91m\]$\[\e[0;38;5;190m\]\w\[\e[0;1;96m\]:\[\e[0m\]\[\e[0m\]\[\e[39m\]\[\e[0m\]\[\e[39m\]'
+export PS1
+
+CROSS_COMPILER="/data/data/com.termux/files/cross-compiler-armv5l/bin"
+export CROSS_COMPILER
+
+GO111MODULE="on"
+export GO111MODULE
+
+#GOBIN="~/go/bin"
+export GOBIN
+
+PATH="/data/data/com.termux/files/usr/bin:/data/data/com.termux/files/usr/sbin:$GOBIN:$CROSS_COMPILER"
+export PATH
+
+# GOROOT_BOOTSTRAP="/data/data/com.termux/files/home/go"
+# export GOROOT_BOOTSTRAP
+
+# GOPATH="/data/data/com.termux/files/home/go"
+# export GOPATH
+
+# GOMODCACHE="/data/data/com.termux/files/home/go/pkg/mod"
+# export GOMODCACHE
+
+# GOINSECURE="1"
+# export GOINSECURE
+
+BAT_CONFIG_PATH="$PREFIX/etc/bat"
+export BAT_CONFIG_PATH
+
+BAT_PAGER=" "
+export BAT_PAGER
+
+#PATH='$PATH:$CROSS_COMPILER'
+#export PATH
+
+set PERL_READLINE_NOWARN
+
+#-----------------------#
+# source $PREFIX/etc/lscolors.sh
+#-----------------------#
