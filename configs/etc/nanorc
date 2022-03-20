@@ -244,7 +244,7 @@ set scrollercolor brightblue,black
 
 ## To include all existing syntax definitions, you can do:
 ## This causes segfault due to disabled libmagic
-include "/data/data/com.termux/files/usr/share/nano/*.nanorc"
+include "$PREFIX/share/nano/*.nanorc"
 
 ## If <Tab> should always produce four spaces when editing a Python file,
 ## independent of the settings of 'tabsize' and 'tabstospaces':
