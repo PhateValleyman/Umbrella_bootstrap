@@ -1,0 +1,3 @@
+visible-stats on
+colored-stats on
+set completion-query-items 50

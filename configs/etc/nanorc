@@ -210,7 +210,7 @@ set numbercolor green,black
 set keycolor orange,black
 set functioncolor white,black
 set promptcolor brightwhite,black
-set scrollercolor brightblue,black
+set scrollercolor blue,black
 
 
 
